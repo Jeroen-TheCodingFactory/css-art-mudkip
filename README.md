@@ -18,7 +18,7 @@ Na het maken van Hoothoot (demo => https://hoothoot.css-art.nl) vroeg ik op Link
 5. Hoe <code> overflow: hidden; </code> op bepaalde elementen kan zorgen voor een 3D-achtig effect doordat een deel van het element verdwijnt wanneer het absolute gepositioneerd is (zie bijv. de wangen, deze lijken naar mijn mening "achter" het hoofd verder te gaan).
 6. Dat een border rond de ogen altijd wel nodig is wanneer je de ogen wilt laten "knipperen" / "wakker laten worden" met een ::after. Er komt gek genoeg altijd een border om de ogen heen die ik niet echt weg kan halen. Dus een standaard border is dan altijd beter.
 7. Dat je in Javascript op een checkbox .checked kan aanspreken en deze kan veranderen (wanneer de pagina laadt).
-8. 
+8. Wanneer je met <code> clip-path </code> iets uitsnijdt (asymmetrisch) je wellicht absolute posities dient aan te passen om alles "uitgelijnd" te krijgen. In mijn geval was dit nodig bij de puntige wangen van Mudkip.
 
 ## Screenshots
 Verschillende screenshots van Mudkip op desktop. Ook heb ik de <i>shiny</i> variant van Mudkip toegevoegd!
