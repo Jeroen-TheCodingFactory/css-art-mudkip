@@ -25,10 +25,12 @@ html{
 body{
   min-height:100vh;
   background: var(--background-color);
+  overflow:hidden;
 }
 
 .mudkip{
     position:relative;
+    transform: scale(0.6);
 }
 
 /* Hidden input (checkbox) for toggling animation */
@@ -247,4 +249,10 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (min-width: 50rem) {
+    .mudkip{
+        transform:scale(1);
+    }
 }
