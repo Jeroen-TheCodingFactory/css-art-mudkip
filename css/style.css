@@ -26,8 +26,33 @@ body{
 
 .mudkip{
     position:relative;
-
 }
+
+.mudkip__input{
+    appearance: none;
+    width:0;
+    height:0;
+    
+}
+
+.mudkip__input:checked ~ .mudkip__head .mudkip__eye::after{
+    transform: scaleY(0)
+}
+
+.mudkip__label{
+    position:absolute;
+    display:block;
+    width:140%;
+    height:150%;
+    z-index: 3;
+    top:-50%;
+    left:-20%;
+}
+
+.mudkip__label:hover{
+    cursor:pointer;
+}
+
 
 .mudkip__head{
     width: 37rem;
@@ -65,9 +90,6 @@ body{
 
 }
 
-.mudkip:hover .mudkip__eye::after{
-    transform: scaleY(0);
-}
 .mudkip__eye--left{
     left:30%;
 }
