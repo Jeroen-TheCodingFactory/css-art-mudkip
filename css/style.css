@@ -34,7 +34,7 @@ body{
 }
 
 /* Hidden input (checkbox) for toggling animation */
-.mudkip__input{
+.mudkip__checkbox{
     -webkit-appearance: none;
     appearance: none;
     width:0;
@@ -58,7 +58,7 @@ body{
 }
 
 /* if input is checked search for .mudkip__head and target the after of the .mudkip__eye inside of it (multiple elements) */
-.mudkip__input:checked ~ .mudkip__head .mudkip__eye::after{
+.mudkip__checkbox:checked ~ .mudkip__head .mudkip__eye::after{
     transform: scaleY(0);
 }
 
