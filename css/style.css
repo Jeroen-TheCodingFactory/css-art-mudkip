@@ -107,6 +107,7 @@ body{
     border-radius: 50%;
     bottom:4%;
     border: 0.1rem solid black;
+    z-index: 2;
 }
 .mudkip__cheek--left{
     left:-12%;
@@ -116,3 +117,42 @@ body{
     right: -12%;
 }
 
+.mudkip__cheekPoint, .mudkip__cheekPointBackground{
+    position: absolute;
+    width:20rem;
+    height:20rem;
+    background:#F3A565;
+    top:25%;
+    clip-path: polygon(25% 100%, 8% 62%, 35% 69%, 47% 41%, 58% 68%, 83% 62%, 68% 100%);
+    z-index: 1;
+}
+
+.mudkip__cheekPoint--left{
+    left:-40%;
+    transform: rotate(270deg);
+}
+
+.mudkip__cheekPoint--right{
+    transform: rotate(-270deg);
+    right:-40%;
+    top:30%;
+}
+
+.mudkip__cheekPointBackground{
+    width:  20rem;
+    height:20rem;
+    background:black;
+    top:25%;
+    z-index: 0;
+}
+
+.mudkip__cheekPointBackground--left{
+    left:-41%;
+    transform:scale(1.04) rotate(270deg);
+}
+
+.mudkip__cheekPointBackground--right{
+    right:-41%;
+    transform:scale(1.04) rotate(-270deg);
+    top:30%;
+}
