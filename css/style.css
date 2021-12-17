@@ -9,7 +9,13 @@
     --mudkip-blue: #5BBDD9;
     --mudkip-chin-blue: #BADEF4;
     --background-color: #004c69;
+    --mudkip-black: black;
+    --mudkip-white: white;
+    --mudkip-cheek-color: #F3A565;
+    --mudkip-stripes-black: rgba(0,0,0,0.8);
+    /* Borders */
     --border-black: 0.2rem solid black;
+    --border-black--eye: 0.1rem solid black;
 }
 
 html{
@@ -18,9 +24,6 @@ html{
 
 body{
   min-height:100vh;
-  display:flex;
-  justify-content: center;
-  align-items: center;
   background: var(--background-color);
 }
 
@@ -28,15 +31,11 @@ body{
     position:relative;
 }
 
+/* Hidden input (checkbox) for toggling animation */
 .mudkip__input{
     appearance: none;
     width:0;
     height:0;
-    
-}
-
-.mudkip__input:checked ~ .mudkip__head .mudkip__eye::after{
-    transform: scaleY(0)
 }
 
 .mudkip__label{
@@ -53,6 +52,10 @@ body{
     cursor:pointer;
 }
 
+/* if input is checked search for .mudkip__head and target the after of the .mudkip__eye inside of it (multiple elements) */
+.mudkip__input:checked ~ .mudkip__head .mudkip__eye::after{
+    transform: scaleY(0);
+}
 
 .mudkip__head{
     width: 37rem;
@@ -69,10 +72,10 @@ body{
     top:30%;
     width: 4rem;
     height: 8em;
-    background:black;
+    background:var(--mudkip-black);
     border-radius: 50%;
     overflow: hidden;
-    border:0.1rem solid black;
+    border: var(--border-black--eye);
 }
 
 .mudkip__eye::after{
@@ -102,7 +105,7 @@ body{
     position:absolute;
     width:80%;
     height:60%;
-    background:white;
+    background:var(--mudkip-white);
     border-radius: 50%;
     top:-10%;
     left:50%;
@@ -126,7 +129,7 @@ body{
     width: 0.3rem;
     height:1rem;
     position:absolute;
-    background:black;
+    background:var(--mudkip-black);
     top:54%;
     transform: translateX(-50%);
 }
@@ -145,7 +148,7 @@ body{
     width:14rem;
     height: 21rem;
     position:absolute;
-    background:#F3A565; 
+    background: var(--mudkip-cheek-color); 
     border-radius: 50%;
     bottom:4%;
     border: var(--border-black);
@@ -163,7 +166,7 @@ body{
     position: absolute;
     width:20rem;
     height:20rem;
-    background:#F3A565;
+    background:var(--mudkip-cheek-color);
     top:25%;
     clip-path: polygon(25% 100%, 8% 62%, 35% 69%, 47% 41%, 58% 68%, 83% 62%, 68% 100%);
     z-index: 1;
@@ -183,7 +186,7 @@ body{
 .mudkip__cheekPointBackground{
     width:  20rem;
     height:20rem;
-    background:black;
+    background:var(--border-black);
     top:25%;
     z-index: 0;
 }
@@ -221,7 +224,7 @@ body{
     position:absolute;
     left: 35%;
     top:0%;
-    background:rgba(0,0,0,0.8);
+    background:var(--mudkip-stripes-black);
 }
 
 .mudkip__fin::before{
@@ -232,4 +235,11 @@ body{
     left:auto;
     right:30%;
     top:-30%;
+}
+
+/* utility classes */
+.u-flex-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
