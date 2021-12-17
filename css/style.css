@@ -4,10 +4,62 @@
     box-sizing: border-box;
 }
 
+:root{
+    /* Colors */
+    --mudkip-blue: #01A1DF;
+    --background-color: #004c69;
+}
+
 html{
     font-size: 62.5%;
 }
 
 body{
-  
+  min-height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-color);
+}
+
+.mudkip{
+    position:relative;
+}
+
+.mudkip__head{
+    width: 38rem;
+    height:32rem;
+    background: var(--mudkip-blue);
+    border-radius: 50%;
+    border: 0.1rem solid black;
+}
+
+.mudkip__eye{
+    position: absolute;
+    top:30%;
+    width: 4rem;
+    height: 10rem;
+    background:black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.mudkip__eye--left{
+    left:30%;
+}
+
+.mudkip__eye--right{
+    right:30%;
+}
+
+.mudkip__iris{
+    position:absolute;
+    width:90%;
+    height:70%;
+    background:white;
+    border-radius: 50%;
+    top:-20%;
+    left:50%;
+    transform: translateX(-50%);
+    border: 0.1rem solid black;
 }
