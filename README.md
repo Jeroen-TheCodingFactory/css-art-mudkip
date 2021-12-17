@@ -4,13 +4,21 @@
 Mudkip voor de lol nagemaakt in HTML en CSS. Met interactie wanneer je op Mudkip klikt. Mudkip is gemaakt zonder enig winstoogmerk.
 
 <b>Alle rechten van Mudkip en andere Pokémon behoren tot de rechtmatige eigenaars.</b>
+<br>
 <b>All rights of Mudkip and other Pokémon belong to the rightfull owners. </b>
 
 ## Intro
 Na het maken van Hoothoot (demo => https://hoothoot.css-art.nl) vroeg ik op Linkedin welke Pokémon ik als volgende CSS-Art zou realiseren. De meeste stemmen vielen op Mudkip, de water en tevens starter-Pokémon van de derde generatie (Hoenn). Mudkip kan wakker worden gemaakt door op hem/haar te klikken, ook wordt er dan met Javascript een geluidje nagespeeld. Het geluidje is het geluid wat Mudkip maakt in de Pokémon game waar Mudkip geïntroduceerd werd. 
 
 ## Dingen die ik heb geleerd
-
+1. Hoe een dunnere rand (border) een mooie cartoon-achtig effect kan geven. 
+2. Hoe een (te) dikke rand (border) een stripboek-effect kan geven. 
+3. Hoe geen rand een gevoel kan geven dat het element met de achtergrond "blend".
+4. Dat is ik steeds sneller wordt in het maken van CSS-Art kunstwerkjes. (+- 4 uur gedaan over Mudkip).
+5. Hoe <code> overflow: hidden; </code> op bepaalde elementen kan zorgen voor een 3D-achtig effect doordat een deel van het element verdwijnt wanneer het absolute gepositioneerd is (zie bijv. de wangen, deze lijken naar mijn mening "achter" het hoofd verder te gaan).
+6. Dat een border rond de ogen altijd wel nodig is wanneer je de ogen wilt laten "knipperen" / "wakker laten worden" met een ::after. Er komt gek genoeg altijd een border om de ogen heen die ik niet echt weg kan halen. Dus een standaard border is dan altijd beter.
+7. Dat je in Javascript op een checkbox .checked kan aanspreken en deze kan veranderen (wanneer de pagina laadt).
+8. 
 
 ## Screenshots
 Verschillende screenshots van Mudkip op desktop. Ook heb ik de <i>shiny</i> variant van Mudkip toegevoegd!
