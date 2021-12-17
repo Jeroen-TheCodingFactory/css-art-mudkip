@@ -244,6 +244,20 @@ body{
     top:-30%;
 }
 
+.mudkip__shimmering{
+    width: 4rem;
+    height:5rem;
+    background:white;
+    border-radius:50%;
+    position:absolute;
+    top:15%;
+    left:20%;
+    transform: rotate(45deg);
+    opacity:0.2;
+    filter:blur(1px);
+}
+
+
 /* utility classes */
 .u-flex-center{
     display:flex;
