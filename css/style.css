@@ -6,7 +6,8 @@
 
 :root{
     /* Colors */
-    --mudkip-blue: #01A1DF;
+    --mudkip-blue: #5BBDD9;
+    --mudkip-chin-blue: #BADEF4;
     --background-color: #004c69;
 }
 
@@ -24,21 +25,24 @@ body{
 
 .mudkip{
     position:relative;
+
 }
 
 .mudkip__head{
-    width: 38rem;
-    height:32rem;
+    width: 37rem;
+    height:33rem;
     background: var(--mudkip-blue);
     border-radius: 50%;
     border: 0.1rem solid black;
+    position: relative;
+    overflow: hidden;
 }
 
 .mudkip__eye{
     position: absolute;
     top:30%;
     width: 4rem;
-    height: 10rem;
+    height: 8em;
     background:black;
     border-radius: 50%;
     overflow: hidden;
@@ -54,11 +58,23 @@ body{
 
 .mudkip__iris{
     position:absolute;
-    width:90%;
-    height:70%;
+    width:80%;
+    height:60%;
     background:white;
     border-radius: 50%;
-    top:-20%;
+    top:-10%;
+    left:50%;
+    transform: translateX(-50%);
+    border: 0.1rem solid black;
+}
+
+.mudkip__chin{
+    position:absolute;
+    width:120%;
+    height:100%;
+    border-radius: 50%;
+    top:63%;
+    background: var(--mudkip-chin-blue);
     left:50%;
     transform: translateX(-50%);
     border: 0.1rem solid black;
