@@ -73,9 +73,29 @@ body{
     width:120%;
     height:100%;
     border-radius: 50%;
-    top:63%;
+    top:61%;
     background: var(--mudkip-chin-blue);
     left:50%;
     transform: translateX(-50%);
     border: 0.1rem solid black;
+}
+
+.mudkip__nose{
+    width: 0.5rem;
+    height:1rem;
+    position:absolute;
+    background:black;
+    top:54%;
+    transform: translateX(-50%);
+}
+
+.mudkip__nose--left{
+    left:45%;
+    transform: rotate(-40deg);
+}
+
+.mudkip__nose--right{
+    right:45%;
+    transform: rotate(40deg);
+
 }
