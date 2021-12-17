@@ -33,9 +33,12 @@ body{
 
 /* Hidden input (checkbox) for toggling animation */
 .mudkip__input{
+    -webkit-appearance: none;
     appearance: none;
     width:0;
     height:0;
+    outline:none;
+    border:none;
 }
 
 .mudkip__label{
@@ -168,6 +171,7 @@ body{
     height:20rem;
     background:var(--mudkip-cheek-color);
     top:25%;
+    -webkit-clip-path: polygon(25% 100%, 8% 62%, 35% 69%, 47% 41%, 58% 68%, 83% 62%, 68% 100%);
     clip-path: polygon(25% 100%, 8% 62%, 35% 69%, 47% 41%, 58% 68%, 83% 62%, 68% 100%);
     z-index: 1;
 }
@@ -184,9 +188,9 @@ body{
 }
 
 .mudkip__cheekPointBackground{
-    width:  20rem;
-    height:20rem;
-    background:var(--border-black);
+    width: 20rem;
+    height: 20rem;
+    background:var(--mudkip-black);
     top:25%;
     z-index: 0;
 }
@@ -227,6 +231,7 @@ body{
     background:var(--mudkip-stripes-black);
 }
 
+/* Stripes on fin (two) */
 .mudkip__fin::before{
     top: -20%;
 }
