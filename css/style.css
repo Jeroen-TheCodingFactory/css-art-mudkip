@@ -71,6 +71,8 @@ body{
     border: var(--border-black);
     position: relative;
     overflow: hidden;
+    /* needed for safari fix */
+    transform: translate3d(0,0,0);
 }
 
 .mudkip__eye{
@@ -193,7 +195,7 @@ body{
 .mudkip__cheekPointBackground{
     width: 20rem;
     height: 20rem;
-    background:var(--mudkip-black);
+    background:linear-gradient(black 90%,transparent);
     top:25%;
     z-index: 0;
 }
