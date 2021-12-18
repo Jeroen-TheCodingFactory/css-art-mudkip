@@ -26,11 +26,12 @@ body{
   min-height:100vh;
   background: var(--background-color);
   overflow:hidden;
+  max-width:100vw;
 }
 
 .mudkip{
     position:relative;
-    transform: scale(0.6);
+    transform: scale(0.5);
 }
 
 /* Hidden input (checkbox) for toggling animation */
