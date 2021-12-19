@@ -1,5 +1,6 @@
 # Mudkip
-![Het gerealiseerde eindproduct op desktop: Mudkip met animatie, gerealiseerd in HTML, CSS en Javascript (audio)](https://mudkip.css-art.nl/img/mudkip.png "Mudkip wakker")
+[![Het gerealiseerde eindproduct op desktop: Mudkip met animatie, gerealiseerd in HTML, CSS en Javascript (audio)](https://mudkip.css-art.nl/img/mudkip.png)](https://mudkip.css-art.nl/video/promo.mp4)
+<i>Klik op de video hierboven voor een demo!</i>
 
 Mudkip voor de lol nagemaakt in HTML en CSS. Met interactie wanneer je op Mudkip klikt. Mudkip is gemaakt zonder enig winstoogmerk.
 
